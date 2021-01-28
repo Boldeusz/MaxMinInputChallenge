@@ -9,7 +9,7 @@ public class Main {
 
         int minNumber = Integer.MAX_VALUE;
         int maxNumber = Integer.MIN_VALUE;
-
+ //       boolean firstTime = true;    this is to flag
         while (true){
 
             System.out.println("Enter number");
@@ -17,6 +17,13 @@ public class Main {
             boolean hasNextInt = scanner.hasNextInt();
             if (hasNextInt){
                 int number = scanner.nextInt();
+
+//                if (firstTime){          // for the first time execute only then change to false!!!
+//                    firstTime = false;
+//                    minNumber = number;
+//                    maxNumber = number;
+//                }
+
                 System.out.println("Number is: " + number);
 
 
